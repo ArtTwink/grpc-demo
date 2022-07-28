@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "io.grpc.examples.tasks";
+
+service EchoService{
+  rpc SayHello (Message) returns (Message) {}
+}
+message Message{
+  string text =1;
+}
